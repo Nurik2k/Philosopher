@@ -13,12 +13,6 @@ namespace Philosopher
         private int eatCount = 0; // Счетчик съеденной пасты
         private int spaghettiPercent = 100; // Процент пасты
 
-        // Создаем объекты для представления вилок
-        private readonly Fork fork1 = new Fork();
-        private readonly Fork fork2 = new Fork();
-        private readonly Fork fork3 = new Fork();
-        private readonly Fork fork4 = new Fork();
-        private readonly Fork fork5 = new Fork();
 
         public MainWindow()
         {
@@ -120,7 +114,7 @@ namespace Philosopher
             Thread.Sleep(new Random().Next(1000, 2001));
         }
 
-        
+
 
         private void UpdateStatus(string philosopherName, string status)
         {
